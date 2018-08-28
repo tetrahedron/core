@@ -107,7 +107,9 @@ ReactDOM.render(<App />, document.getElementById("root"));
 
 ## Credits
 
-Tetrahedron Grid is a project by [Garet McKinley](https://github.com/garetmckinley)
+Tetrahedron Core is a project by [Garet McKinley](https://github.com/garetmckinley)
+
+Want to help? Join our [Spectrum.chat community](https://spectrum.chat/tetrahedron) to get started!
 
 ## License
 
