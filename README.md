@@ -56,6 +56,8 @@ npm install @tetrahedron/core
 
 #### Usage
 
+<details><summary><strong>Basic Usage</strong></summary><p>
+
 This is not something that you will use as a react component, but rather as a complement to styled-components. It's a function that accepts a single string argument (tagname). Most every html tag is supported, you can find a list of html tags [here](https://www.w3schools.com/tags/).
 
 Here's an example of basic usage
@@ -75,6 +77,10 @@ const App = () => (
 
 ReactDOM.render(<App />, document.getElementById("root"));
 ```
+
+</p></details>
+
+<details><summary><strong>With styled-components</strong></summary><p>
 
 You can also combine the `Stylable` function with `styled` to set an initial style via styled-components, while still allowing style changes inline. This is especially useful if you want to create a reusable component that will allow tweaking on the fly.
 
@@ -96,6 +102,8 @@ const App = () => (
 
 ReactDOM.render(<App />, document.getElementById("root"));
 ```
+
+</p></details>
 
 ## Credits
 
