@@ -1,4 +1,11 @@
 import { injectGlobal } from "styled-components";
+
+/**
+ * Returns an array of valid css declarations generated
+ * from the react props supplied.
+ *
+ * @param {array} props list of react props
+ */
 export const generateStyles = props => [
   props.padding && `padding: ${props.padding};`,
   props.margin && `margin: ${props.margin};`,
@@ -19,13 +26,23 @@ export const generateStyles = props => [
   props.hidden && `display: none;`,
 ];
 
-export const resetCSS = () => injectGlobal`
+/**
+ * Injects our custom reset css styles into the html head
+ *
+ * @param {Object} props - custom configuration properties
+ * @param {Object} props.body - configuration for the html body
+ * @param {string} props.body.margin - margin to apply to the html body
+ * @param {string} props.body.background - background to apply to the html body
+ * @param {string} props.font - default font family to use
+ */
+export const resetCSS = ({ body = {}, font } = {}) => injectGlobal`
   html {
     line-height: 1.15;
     text-size-adjust: 100%;
   }
   body {
-    margin: 0;
+    margin: ${body.margin ? body.margin : "0"};
+    ${body.background && `background: ${body.background};`}
   }
   * {
     box-sizing: border-box;
