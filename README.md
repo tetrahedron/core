@@ -6,6 +6,12 @@
   <a href="https://travis-ci.org/tetrahedron/core">
     <img src="https://travis-ci.org/tetrahedron/core.svg?branch=master" alt="Travis CI build status">
   </a>
+  <a href="https://github.com/tetrahedron/core/blob/master/LICENSE">
+    <img src="https://img.shields.io/github/license/tetrahedron/core.svg" alt="License">
+  </a>
+  <a href="https://npm.im/@tetrahedron/core">
+    <img src="https://img.shields.io/bundlephobia/minzip/@tetrahedron/core.svg" alt="gzip size">
+  </a>
   <a href="https://spectrum.chat/tetrahedron">
     <img src="https://withspectrum.github.io/badge/badge.svg" alt="Join the community on Spectrum">
   </a>
