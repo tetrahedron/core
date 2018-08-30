@@ -12,6 +12,7 @@
     "build": "npm run build:lib && npm run build:dist",
     "build:lib": "babel src --out-dir lib",
     "build:dist": "rollup -c && rollup -c --environment PRODUCTION",
+    "build:watch": "rollup -c --watch",
     "clean": "rm -rf dist && rm -rf lib",
     "lint": "eslint src",
     "lint:fix": "eslint --fix src"
