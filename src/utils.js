@@ -43,6 +43,7 @@ export const resetCSS = ({ body = {}, font } = {}) => injectGlobal`
   body {
     margin: ${body.margin ? body.margin : "0"};
     ${body.background && `background: ${body.background};`}
+    ${font && `font-family: ${font};`}
   }
   * {
     box-sizing: border-box;
